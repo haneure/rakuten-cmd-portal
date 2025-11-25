@@ -1,0 +1,26 @@
+{
+  "name": "rakuten-cmd-portal",
+  "private": true,
+  "workspaces": [
+    "packages/frontend",
+    "packages/backend",
+    "packages/design-system"
+  ],
+  "scripts": {
+    "bootstrap": "npm install --workspaces && npm run build:all",
+    "build:all": "npm --workspace packages/frontend run build && npm --workspace packages/backend run build",
+    "start:dev": "concurrently \"npm --workspace packages/backend run dev\" \"npm --workspace packages/frontend run dev\"",
+    "design-system:dev": "npm --workspace packages/design-system run dev",
+    "design-system:test": "npm --workspace packages/design-system run test",
+    "design-system:test:coverage": "npm --workspace packages/design-system run test:coverage",
+    "design-system:storybook": "npm --workspace packages/design-system run storybook",
+    "design-system:build": "npm --workspace packages/design-system run build",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "npm --workspace packages/frontend run test && npm --workspace packages/backend run test && npm --workspace packages/design-system run test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^2.0.0"
+  }
+}

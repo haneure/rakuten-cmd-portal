@@ -1,0 +1,132 @@
+.card {
+  background-color: var(--color-bg-primary);
+  border-radius: var(--border-radius-lg);
+  transition: all var(--transition-base);
+}
+
+/* Variants */
+.default {
+  border: 1px solid var(--color-border);
+}
+
+.outlined {
+  border: 2px solid var(--color-border);
+}
+
+.elevated {
+  border: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Padding */
+.padding-none {
+  padding: 0;
+}
+
+.padding-sm {
+  padding: var(--spacing-sm);
+}
+
+.padding-md {
+  padding: var(--spacing-md);
+}
+
+.padding-lg {
+  padding: var(--spacing-lg);
+}
+
+/* Interactive states */
+.clickable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.clickable:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.clickable:active {
+  transform: translateY(0);
+}
+
+.hoverable:hover {
+  border-color: var(--color-gray-400);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.clickable:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Full width */
+.fullWidth {
+  width: 100%;
+}
+
+/* Header, Body, Footer */
+.header {
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.footer {
+  border-top: 1px solid var(--color-border-light);
+}
+
+/* Header padding adjustments when card has padding */
+.headerPadding-sm {
+  padding: var(--spacing-sm);
+  margin: calc(var(--spacing-sm) * -1);
+  margin-bottom: var(--spacing-sm);
+}
+
+.headerPadding-md {
+  padding: var(--spacing-md);
+  margin: calc(var(--spacing-md) * -1);
+  margin-bottom: var(--spacing-md);
+}
+
+.headerPadding-lg {
+  padding: var(--spacing-lg);
+  margin: calc(var(--spacing-lg) * -1);
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Body padding adjustments when card has header/footer */
+.bodyPadding-sm {
+  padding: var(--spacing-sm) 0;
+}
+
+.bodyPadding-md {
+  padding: var(--spacing-md) 0;
+}
+
+.bodyPadding-lg {
+  padding: var(--spacing-lg) 0;
+}
+
+/* Footer padding adjustments when card has padding */
+.footerPadding-sm {
+  padding: var(--spacing-sm);
+  margin: calc(var(--spacing-sm) * -1);
+  margin-top: var(--spacing-sm);
+}
+
+.footerPadding-md {
+  padding: var(--spacing-md);
+  margin: calc(var(--spacing-md) * -1);
+  margin-top: var(--spacing-md);
+}
+
+.footerPadding-lg {
+  padding: var(--spacing-lg);
+  margin: calc(var(--spacing-lg) * -1);
+  margin-top: var(--spacing-lg);
+}
+
+/* When padding is 'none', remove borders on header/footer */
+.padding-none .header,
+.padding-none .footer {
+  border: none;
+}
