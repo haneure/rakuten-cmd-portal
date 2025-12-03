@@ -1,6 +1,7 @@
 # Rakuten Cloud Management Portal
-
 A modern, type-safe web application for managing Rakuten cloud infrastructure, built with React, TypeScript, and a custom design system.
+
+# Currently on-hold as I need to prepare for JLPT exam
 
 ## 📦 Project Structure
 
