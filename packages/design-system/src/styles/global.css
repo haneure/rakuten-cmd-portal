@@ -37,6 +37,7 @@
   --color-error-light: #fee2e2;
   --color-error: #ef4444;
   --color-error-dark: #991b1b;
+  --color-danger: var(--color-error); /* Alias for error */
 
   --color-info-light: #dbeafe;
   --color-info: #3b82f6;
