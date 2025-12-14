@@ -8,6 +8,9 @@ export type { InputProps, InputSize, InputType, InputVariant } from './component
 export { Card } from './components/Card';
 export type { CardPadding, CardProps, CardVariant } from './components/Card';
 
+export { Modal } from './components/Modal';
+export type { ModalProps, ModalSize } from './components/Modal';
+
 // Theme
 export { colors, spacing, theme, typography } from './theme';
 export type { Theme } from './theme';

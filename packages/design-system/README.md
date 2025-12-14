@@ -29,10 +29,11 @@ npm run build
 
 ## Components
 
-- Button
-- Input (coming soon)
-- Card (coming soon)
-- Modal (coming soon)
+- **Button** - Interactive button with multiple variants, sizes, and states
+- **Input** - Text input field with validation states and icons
+- **Card** - Content container with optional click interactions
+- **Modal** - Accessible dialog with portal rendering and focus management
+- **Badge** - Status indicator with variants, sizes, dot indicators, and animations
 
 ## Usage
 
